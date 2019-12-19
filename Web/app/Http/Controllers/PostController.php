@@ -36,7 +36,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->vallidate([
+            'title'=>'required',
+            'body'=>'required'
+        ]);
+        return 123;
     }
 
     /**
