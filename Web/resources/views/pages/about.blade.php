@@ -1,11 +1,6 @@
+@extends('layouts.app')
 
-
-    @extends('layouts.app')
-
-    @section('content')
-    <div class="jumbotron text-center">
-        <h1>This is About Page!</h1>
-        <p>This page is about the developers</p>
-    </div>
-
-    @endsection
+@section('content')
+    <h1><?php echo $title; ?></h1>
+    <p>This is the about page</p>
+@endsection
